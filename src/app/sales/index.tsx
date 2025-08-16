@@ -1,6 +1,6 @@
 import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
-
+import Image from "next/image";
 interface Products {
   id: number;
   name: string;
@@ -67,7 +67,7 @@ const Sales: React.FC = () => {
             className="bg-white rounded-lg p-4 relative group"
           >
             <div>
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 className="w-full h-auto rounded"
