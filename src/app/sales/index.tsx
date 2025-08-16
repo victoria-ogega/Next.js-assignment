@@ -54,7 +54,7 @@ const Sales: React.FC = () => {
         <div>
         <div className="mb-8 flex items-center">
           <div className="w-3 h-8 bg-red-600 rounded-sm mr-4" />
-          <span className="text-red-600 font-semibold">Today's</span>
+         <span className="text-red-600 font-semibold">Today&#39;s</span>
         </div>
         <h2 className="text-3xl font-bold mb-8">Flash Sales</h2>
         </div>
@@ -71,6 +71,8 @@ const Sales: React.FC = () => {
                 src={product.image}
                 alt={product.name}
                 className="w-full h-auto rounded"
+                width={20}
+                height={20}
               />
               <div className="absolute top-2 right-2 flex flex-col gap-2 ">
                 <button className="bg-white p-2 rounded-full shadow">
