@@ -24,7 +24,7 @@ export const Browse: React.FC = ()=>{
 
   const [selected, setSelected]= useState('camera')
 return(
-    <div className="">
+    <div className="mt-10">
 <div>
         <div className="mb-8 flex items-center">
           <div className="w-3 h-8 bg-red-600 rounded-sm mr-4" />

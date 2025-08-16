@@ -1,17 +1,7 @@
-import { MdSearch } from "react-icons/md";
+
 import { CiHeart } from "react-icons/ci";
-import { IoCartOutline } from "react-icons/io5";
-import { MdArrowForwardIos } from "react-icons/md";
 import Image from 'next/image';
 import { IoEyeOutline } from "react-icons/io5";
-import { IoIosPhonePortrait } from "react-icons/io";
-import { TiStarFullOutline } from "react-icons/ti";
-import { HiOutlineComputerDesktop } from "react-icons/hi2";
-import { BsSmartwatch } from "react-icons/bs";
-import { CiCamera } from "react-icons/ci";
-import { PiHeadphones } from "react-icons/pi";
-import { MdOutlineVideogameAsset } from "react-icons/md";
-
 interface Product {
   id: number;
   name: string;

@@ -71,8 +71,8 @@ const Sales: React.FC = () => {
                 src={product.image}
                 alt={product.name}
                 className="w-full h-auto rounded"
-                width={20}
-                height={20}
+                width={500}
+                height={0}
               />
               <div className="absolute top-2 right-2 flex flex-col gap-2 ">
                 <button className="bg-white p-2 rounded-full shadow">

@@ -156,6 +156,7 @@ import Selling from "./Selling-products";
 import Newarrivals from "./NewArrivals";
 import Footer from "./shared-components";
 import Hero from "@/Herosection";
+import { Header } from "./shared-components/pages";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
@@ -163,6 +164,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-col items-center justify-center">
         </div>
+<Header/>
         <Hero/>
         <Sales/>
          <Browse/>
