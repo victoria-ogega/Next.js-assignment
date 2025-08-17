@@ -48,7 +48,7 @@ function Footer() {
             <ul>
               {[
                 "My Account",
-                "Login / Register",
+                "/signup",
                 "Cart",
                 "Wishlist",
                 "Shop",

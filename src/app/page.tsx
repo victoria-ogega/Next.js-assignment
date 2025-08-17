@@ -6,7 +6,7 @@ import Selling from "../Home/Selling-products";
 import Newarrivals from "../Home/NewArrivals";
 import Footer from "../shared-components";
 import { Hero } from "@/Home/Herosection";
-import { Header } from "../shared-components/pages";
+import { Header } from "../shared-components/page";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">

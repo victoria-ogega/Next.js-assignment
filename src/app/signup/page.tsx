@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/shared-components/pages";
+import { Header } from "@/shared-components/page";
 import Footer from "@/shared-components";
 import Image from "next/image";
 
@@ -28,19 +28,18 @@ export default function SignUp() {
     const handleGoogleSignUp = () => {
         console.log("Google sign up clicked");
     };
-
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
 
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-40 py-12">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-20 py-12">
 
-                <div className="flex">
+                <div className="flex ml-6">
                     <Image
-                        src="/Images/SideImage.png"
+                        src="/Images/Side Image.png"
                         alt="Cart and a smartphone"
-                        width={900}
-                        height={400}
+                        width={600}
+                        height={300}
                         className="max-w-full h-auto"
                     />
                 </div>
@@ -57,7 +56,16 @@ export default function SignUp() {
                             </div>
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="space-y-6">
-
+                                    <div>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Name"
+                                            value={formData.name}
+                                            onChange={handleInputChange}
+                                            className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400 w-100"
+                                        />
+                                    </div>
                                     <div>
                                         <input
                                             type="text"
@@ -65,7 +73,7 @@ export default function SignUp() {
                                             placeholder="Email or Phone Number"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400"
+                                            className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400 w-100"
                                         />
                                     </div>
                                     <div>
@@ -75,14 +83,14 @@ export default function SignUp() {
                                             placeholder="Password"
                                             value={formData.password}
                                             onChange={handleInputChange}
-                                            className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400"
+                                            className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400 w-100"
                                         />
                                     </div>
                                 </div>
                                 <div className="space-y-4">
                                     <button
                                         type="submit"
-                                        className="w-full h-12 bg-red-500 hover:bg-red-600 text-white text-base font-medium rounded-sm"
+                                        className="w-100 h-12 bg-red-500 hover:bg-red-600 text-white text-base font-medium rounded-sm"
                                     >
                                         Create Account
                                     </button>
@@ -116,7 +124,7 @@ export default function SignUp() {
                             <div className="text-center">
                                 <span className="text-gray-600">Already have account? </span>
 
-                                <Link href="/login" className="text-black font-medium underline hover:no-underline">
+                                <Link href="/signin" className="text-black font-medium underline hover:no-underline">
                                     Log in
                                 </Link>
                             </div>
