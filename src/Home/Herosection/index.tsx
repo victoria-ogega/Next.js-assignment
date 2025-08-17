@@ -20,7 +20,7 @@ export function Hero() {
         "Health & Beauty"
     ];
     return (
-        <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
+        <div className="max-w-7xl mx-auto px-4 py-8 ">
             <div className="flex gap-8">
 
                 <div className="w-64 flex-shrink-0">

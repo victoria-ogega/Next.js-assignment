@@ -17,7 +17,7 @@ const products: Product[] = [
   {
     id: 1,
     name: "Dog Food",
-    image: "/dogFood.png",
+    image: "/Images/dogfood.png",
     description:"Breed Dry Dog Food",
     price: 100,
     rating: 5,
@@ -25,7 +25,7 @@ const products: Product[] = [
   },
   { id: 2,
     name: "CANON Camera",
-    image: "/camera.png",
+    image: "/Images/camera.png",
     description:"CANON EOS Camera",
     price: 360,
     rating: 4,
@@ -35,7 +35,7 @@ const products: Product[] = [
   { 
     id: 3, 
     name: " Asus laptop",
-     image: "/asuslaptop.png",
+     image: "/Images/laptop.png",
      description:"ASUS FHD Gaming Laptop", 
      price: 700,
       rating: 5,
@@ -44,7 +44,7 @@ const products: Product[] = [
   {
     id: 4,
     name: "Skincare",
-    image: "/3_bottles.png",
+    image: "/Images/skincare.jpg",
     description:"Curology Product Set",
     price: 500,
     rating: 5,
@@ -53,7 +53,7 @@ const products: Product[] = [
   {
     id: 5,
     name: "Electric toy-car",
-    image: "/red-car.png",
+    image: "/Images/toycar.png",
     description:"Kid's Electric Car",
     price: 960,
     rating: 4,
@@ -63,7 +63,7 @@ const products: Product[] = [
   {
     id: 6,
     name: "Sport Shoes",
-    image: "/yellow-shoes.png",
+    image: "/Images/yellow-shoes.png",
     description:"Jr. Zoom Soccer Cleats",
     price: 1160,
     rating: 5,
@@ -72,7 +72,7 @@ const products: Product[] = [
   {
     id: 7,
     name: "Game pad",
-    image: "/gamepad.png",
+    image: "/Images/gameconsole.png",
     description:"GP11 Shooter USB Gamepad",
     price: 660,
     rating: 4,
@@ -82,7 +82,7 @@ const products: Product[] = [
   {
     id: 8,
     name: "Green acket",
-    image: "/greenjacket.png",
+    image: "/Images/green jacket.png",
     description:"Quilted Satin Jacket</strong",
     price: 660,
     rating: 4,
