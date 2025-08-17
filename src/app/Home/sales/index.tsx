@@ -85,18 +85,15 @@ const Sales: React.FC = () => {
     <section className="py-12 text-center  border-b-2 border-gray-300">
       <div className="display: flex mb-4">
 
-        <div>
         <div className="mb-8 flex items-center">
+
           <div className="w-3 h-8 bg-red-600 rounded-sm mr-4" />
          <span className="text-red-600 font-semibold">Today&#39;s</span>
+        
+        </div>
 
-         <div>
-          
-         </div>
-        </div>
-      
-        </div>
       </div>
+      
       <div className="flex gap-20">
 <h2 className="text-3xl font-bold mb-8 ">Flash Sales</h2>
 <div className="flex items-center gap-4">
