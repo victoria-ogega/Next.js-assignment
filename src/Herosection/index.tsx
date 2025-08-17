@@ -1,50 +1,87 @@
-
+"use client";
+import { FaApple } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
-import { FaApple } from "react-icons/fa6";
+import Image from "next/image";
 
-function Hero(){
-    return(
-      
-<div className="flex">
-      <div>
-         <ul>
-              {[
-                "Woman's Fashion",
-                "Men's Fashion",
-                "Electronics",
-                "Home & lifestyle",
-                "Medicine",
-                "Sports & outdoor",
-                "Baby's & Toys",
-                "Groceries & pets",
-                "Health & Beauty",
-              ].map((link) => (
-                <li key={link} className=" mb-2 text-sm">
-                  <a
-                    href={`/${link}`}
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>   
+
+
+
+export function Hero() {
+    const categories = [
+        "Woman's Fashion",
+        "Men's Fashion",
+        "Electronics",
+        "Home & Lifestyle",
+        "Medicine",
+        "Sports & Outdoor",
+        "Baby's & Toys",
+        "Groceries & Pets",
+        "Health & Beauty"
+    ];
+    return (
+        <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
+            <div className="flex gap-8">
+
+                <div className="w-64 flex-shrink-0">
+                    <div className="space-y-4">
+                        {categories.map((category, index) => (
+                            <div key={index} className="flex items-center justify-between group cursor-pointer">
+                                <span className="text-black hover:text-red-800 transition-colors">
+                                    {category}
+                                </span>
+                                {(category === "Woman's Fashion" || category === "Men's Fashion") && (
+                                    <FaArrowRight  className="h-4 w-4 text-gray-400 group-hover:text-red-800 transition-colors" />
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="w-px bg-gray-300"></div>
+
+                <div className="flex-1 bg-black text-white relative overflow-hidden rounded-sm">
+                    <div className="flex items-center h-96">
+
+                        <div className="flex-1 p-12">
+                            <div className="flex items-center gap-2 mb-6">
+                                < FaApple className="h-8 w-8" />
+                                <span className="text-lg">iPhone 14 Series</span>
+                            </div>
+                            <h1 className="text-5xl font-semibold mb-6 leading-tight w-100">
+                                Up to 10% <br></br>off Voucher
+                            </h1>
+                            <div className="flex items-center gap-2">
+                                <button className="text-white underline underline-offset-8 text-lg font-medium hover:no-underline transition-all">
+                                    Shop Now
+                                </button>
+                                <FaArrowRight className="h-5 w-5" />
+                            </div>
+                        </div>
+
+                        <div className="flex-1 flex items-center justify-center">
+                            <Image
+                                src="/Images/phone.png"
+                                alt="iPhone 14 Series"
+                                width={1000}
+                                height={1000}
+                                className="w-200 h-200 object-contain"
+                                priority={true}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3">
+                        {[...Array(5)].map((_, index) => (
+                            <div
+                                key={index}
+                                className={`w-3 h-3 rounded-full ${index === 2 ? 'bg-red-800' : 'bg-white/30'
+                                    }`}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-
-        <div className="">
-<div className=" mt-10 bg-black w-200 pt-5 pb-7">
-          <p className="text-white pl-30 pt-10"> < FaApple className="absolute left-103 top-52 text-white text-5xl "></FaApple>iphone 14 Series</p>
-          <br></br>
-          <h1 className="text-white pl-15 text-4xl "><strong>Up to 10%
-            <br></br>off Voucher</strong></h1>
-          <br></br>
-          <p className="underline text-white pl-15 flex gap-3">Shop Now <FaArrowRight className="text-white mt-1"></FaArrowRight></p>
-        </div>
-      </div>
-        </div>
-    )
-
+    );
 }
-export default Hero

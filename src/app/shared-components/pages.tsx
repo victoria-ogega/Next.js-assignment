@@ -5,7 +5,7 @@ import { CiHeart } from "react-icons/ci";
 
 export function Header() {
   return (
-    <div className="w-full">
+    <div className="w-full mt-1000">
       <div className="bg-black text-white text-sm py-3 px-4">
         <div className="max-w-7xl mx-auto flex justify-center items-center">
           <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
